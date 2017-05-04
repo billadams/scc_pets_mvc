@@ -1,0 +1,25 @@
+﻿@model SCCPetsMVC.Models.Customer
+
+<h2>Contact Us</h2>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <label for="FirstName">First name:</label>
+    @Html.TextBoxFor(x => x.FirstName)
+    <label for="LastName">Last name:</label>
+    @Html.TextBoxFor(x => x.LastName)
+    <label for="Address">Address:</label>
+    @Html.TextBoxFor(x => x.Address)
+    <label for="City">City:</label>
+    @Html.TextBoxFor(x => x.City)
+    <label for="State">State:</label>
+    @Html.TextBoxFor(x => x.State)
+    <label for="Zip">Zip:</label>
+    @Html.TextBoxFor(x => x.Zip)
+    <label for="Email">Email:</label>
+    @Html.TextBoxFor(x => x.Email)
+    <label for="Phone">Phone:</label>
+    @Html.TextBoxFor(x => x.Phone)
+
+    <input type="submit" value="Send It!" />
+}
